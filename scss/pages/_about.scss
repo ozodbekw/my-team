@@ -1,0 +1,152 @@
+.about {
+  padding-top: 53px;
+  padding-bottom: 12rem;
+  background-color: $midbight-green;
+  background-image: url(../images/svg/about-hero-right.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.about__container {
+  display: flex;
+  gap: 3rem;
+}
+
+.about__title {
+  height: 100px;
+  width: 350px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.56;
+  margin-top: 0;
+}
+.about__describtion {
+  width: 730px;
+}
+.about__shape {
+  width: 50px;
+  height: 4px;
+  background-color: $light-coral;
+  margin-bottom: 40px;
+}
+
+/* Directors */
+
+.directors {
+  height: 1002px;
+  background-color: $deep-jungle-green;
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+  background-image: url(../images/svg/directors-top.svg),
+    url(../images/svg/directors-rect.svg);
+  background-repeat: no-repeat;
+  background-position: top left, right bottom;
+}
+
+.directors__container {
+  text-align: center;
+}
+
+.directors__title {
+  font-size: $h2-fs;
+  line-height: $h2-lh;
+  font-weight: 700;
+  margin-bottom: 6.4rem;
+  margin-top: 0;
+}
+.directors__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  row-gap: 4.8rem;
+}
+.directors__card {
+  position: relative;
+  background-color: $state-green;
+  width: 350px;
+  height: 253px;
+  text-align: center;
+}
+
+.directors__img {
+  margin-top: 3.2rem;
+  margin-bottom: 1.6rem;
+}
+.directors__card-title {
+  font-weight: 700;
+  color: $rapture-blue;
+  font-size: $h3-fs;
+  line-height: $h3-lh;
+}
+.directors__card-job {
+  font-weight: 500;
+  font-style: italic;
+  font-size: $body-small-fs;
+  line-height: $body-small-lh;
+}
+.directors__card-caption {
+  font-weight: 500;
+  font-style: italic;
+  font-size: $body-small-fs;
+  line-height: $body-small-lh;
+  width: 254px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.directors__plus {
+  position: absolute;
+  top: 225px;
+  right: 147px;
+  left: 147px;
+  cursor: pointer;
+  &:hover circle {
+    transition: 0.3s;
+    fill: $rapture-blue;
+  }
+}
+.directors__socials {
+  margin-top: 2.4rem;
+  svg {
+    cursor: pointer;
+    path {
+      transition: 0.3s;
+    }
+  }
+  svg:hover path {
+    fill: $light-coral;
+  }
+}
+.directors-x {
+  cursor: pointer;
+  position: absolute;
+  top: 225px;
+  right: 147px;
+  left: 147px;
+  &:hover circle {
+    fill: $light-coral;
+    transition: 0.3s;
+  }
+}
+
+/* About__clients  */
+.about__clients {
+  height: 43.7rem;
+  background-color: $state-green;
+  padding: 14rem 0;
+  text-align: center;
+  background-image: url(../images/svg/clients-circle.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.about__clients_title {
+  font-weight: 700;
+  font-size: $h2-fs;
+  line-height: $h2-lh;
+  margin-bottom: 6.4rem;
+}
+.about__clients_logos {
+  display: flex;
+  justify-content: space-between;
+}
