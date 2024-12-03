@@ -1,5 +1,5 @@
 .about {
-  padding-top: 53px;
+  padding-top: 12rem;
   padding-bottom: 12rem;
   background-color: $midbight-green;
   background-image: url(../images/svg/about-hero-right.svg);
@@ -149,4 +149,232 @@
 .about__clients_logos {
   display: flex;
   justify-content: space-between;
+}
+
+/* Media  */
+@media screen and (max-width: 397px) {
+  .about {
+    padding-top: 0;
+    padding-bottom: 10.8rem;
+    background-image: url(../images/svg/about-hero-right.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom -100px;
+  }
+
+  .about__container {
+    display: flex;
+    gap: 3rem;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .about__title {
+    width: 327px !important;
+    height: 40px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1;
+    margin-top: 0;
+  }
+  .about__describtion {
+    width: 327px !important;
+    height: 196px;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+  .about__shape {
+    display: none;
+    visibility: hidden;
+  }
+
+  /* Directors */
+
+  .directors {
+    height: 220.2rem !important;
+    padding-top: 8.8rem;
+    padding-bottom: 8.8rem;
+    background-image: url(../images/svg/directors-top.svg),
+      url(../images/svg/directors-rect.svg);
+    background-repeat: no-repeat;
+    background-position: top -100px left, right bottom;
+  }
+
+  .directors__container {
+    text-align: center;
+    height: 206.2rem;
+  }
+
+  .directors__title {
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .directors__cards {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  .directors__card {
+    position: relative;
+    background-color: $state-green;
+    width: 327px;
+    height: 253px;
+    text-align: center;
+  }
+  .directors-x {
+    position: static;
+    right: 10px;
+  }
+
+  /* About__clients  */
+  .about__clients {
+    height: 63.2rem !important;
+    background-color: $state-green;
+    padding: 8.8rem 0;
+    text-align: center;
+    background-image: url(../images/svg/clients-circle.svg);
+    background-repeat: no-repeat;
+    background-position: top -10rem left -10rem;
+  }
+
+  .about__clients_title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 6.4rem;
+  }
+  .about__clients_logos {
+    display: flex;
+    justify-content: center;
+    gap: 5.4rem;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .about {
+    padding-top: 11.2rem;
+    padding-bottom: 11.2rem;
+  }
+  .about__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .about__title {
+    height: 5.6rem;
+    width: 68.3rem;
+  }
+  .about__describtion {
+    width: 457px;
+    height: 140px;
+  }
+  .about__shape {
+    visibility: hidden;
+    display: none;
+  }
+
+  /* Directors */
+
+  .directors {
+    height: 121.9rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .directors__container {
+    text-align: center;
+    padding: 0;
+  }
+
+  .directors__title {
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 4.8rem;
+  }
+  .directors__cards {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    column-gap: 1.1rem;
+    row-gap: 7.6rem;
+  }
+  .directors__card {
+    width: 281px;
+    height: 253px;
+  }
+
+  .directors__img {
+    margin-top: 3.2rem;
+    margin-bottom: 1.6rem;
+  }
+  .directors__card-title {
+    font-weight: 700;
+    color: $rapture-blue;
+    font-size: $h3-fs;
+    line-height: $h3-lh;
+  }
+  .directors__card-job {
+    font-weight: 500;
+    font-style: italic;
+    font-size: $body-small-fs;
+    line-height: $body-small-lh;
+  }
+  .directors__card-caption {
+    font-weight: 500;
+    font-style: italic;
+    font-size: $body-small-fs;
+    line-height: $body-small-lh;
+    width: 254px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .directors__plus {
+    position: static;
+    margin-top: 25px;
+    cursor: pointer;
+  }
+  .directors__socials {
+    margin-top: 2.4rem;
+  }
+  .directors-x {
+    cursor: pointer;
+    position: absolute;
+    top: 225px;
+    right: 147px;
+    left: 120px;
+  }
+
+  /* About__clients  */
+  .about__clients {
+    height: 30.8rem;
+    background-color: $state-green;
+    padding: 14rem 0;
+    text-align: center;
+    background-image: url(../images/svg/clients-circle.svg);
+    background-repeat: no-repeat;
+    background-position: top -100px left;
+  }
+
+  .about__clients_title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 4.8rem;
+  }
+  .about__clients_logos {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    img {
+      width: 103px;
+      height: 17px;
+      top: 1959px;
+    }
+  }
 }
