@@ -1612,6 +1612,10 @@ main {
   }
 }
 @media screen and (max-width: 397px) {
+  .hero__describtion p {
+    width: 327px;
+    max-width: 447px;
+  }
   .container {
     padding-left: 2.4rem;
     padding-right: 2.4rem;
