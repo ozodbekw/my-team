@@ -1613,7 +1613,7 @@ main {
 }
 @media screen and (max-width: 397px) {
   .hero__describtion p {
-    width: 327px;
+    width: 80vw;
     max-width: 447px;
   }
   .container {
